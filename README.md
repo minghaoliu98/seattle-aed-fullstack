@@ -1,3 +1,6 @@
+## Geog 458 - Final Project: Fullstack Development
+## MingHao Liu && Zejun Zheng
+
 ### The web map can be viewed at: https://seattle-aed.lmh98.com/
 
 AED, or automated external defibrillator, is used to help those experiencing sudden cardiac arrest. It's a medical device that can analyze the heart's rhythm and deliver an electrical shock, or defibrillation, to help the heart re-establish an effective rhythm. AED is important because it can restore a normal heart rhythm in victims of sudden cardiac arrest and portable AEDs enable more people to respond to a medical emergency that requires defibrillation. 
@@ -24,7 +27,7 @@ _Figure 3:  user account page_
 
 As said before, only users can upload pictures for AED in specific locations. Once the users sign in their account, as shown in figure 4, the system will allow the user to upload AED pictures in specific locations. In figure 5, when a user upload an AED picture, the user can adjust the picture by themselves and add some description about the AED. 
 
-![Map Image](readmePic/upload.png)
+![Map Image](readmePic/upload.jpg)
 
 _Figure 4:  pop up window for AED with “upload AED picture” option_
 
