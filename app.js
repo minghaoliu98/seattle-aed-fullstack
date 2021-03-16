@@ -14,10 +14,10 @@ const FILE_PATH = "/img/";
 const { Pool, Client } = require('pg')
 const pool = new Pool({
   user: 'postgres',
-  host: 'seattle-aed.ceefxyql01pa.us-east-2.rds.amazonaws.com',
-  database: 'postgres',
-  password: 'Luck2016!',
-  port: 5432,
+  host: '**************.rds.amazonaws.com',
+  database: '**************',
+  password: '**************',
+  port: **************,
 })
 
 app.use(express.urlencoded({extended: true}));
