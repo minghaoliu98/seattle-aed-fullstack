@@ -12,6 +12,7 @@ When people get into our website, they can visit our website as visitors or as u
 
 _Figure 1: Create Account page_
 
+![Map Image](readmePic/sign-in.png)
 
 _Figure 2:  Sign in  page_
 
