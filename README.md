@@ -1,1 +1,1 @@
-# seattle-aed-fullstack
+# seattleaed

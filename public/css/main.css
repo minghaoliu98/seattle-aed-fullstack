@@ -1,0 +1,228 @@
+body {
+  background-color: black !important;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+body, #navi, #map, #container-map-info, #main, .flex-row, #select-img-btn{
+  width: 100%
+}
+
+body, #map, #main{
+  height: 100%;
+}
+
+#success-m, #error-m, #info, #login, #create-account, #user-location-container, #marker-info-container, #upload-img, #select-img-btn, #change-password, #user-info, #user-uploaded-img{
+  position: absolute !important;
+}
+
+#map, #container-map-info, #image-cutting {
+  position: relative;
+}
+
+#select-img-btn {
+  z-index: 999;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 300px;
+}
+
+.info-element {
+  text-align: left;
+  justify-content: space-between;
+  opacity: 1;
+  padding-top: 5px;
+}
+
+.info-element:hover, #signed-in:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.info-element:hover {
+  box-shadow: 0 0 10px grey;
+}
+
+#error-m, #success-m{
+  z-index: 999;
+  font-size: 20px;
+}
+
+#upload-img, #success-m, #error-m, #login, #create-account, #marker-info-container, #change-password, #user-info, #user-uploaded-img{
+  align-self: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+#info, #marker-info-container, #user-uploaded-img{
+  flex-wrap: wrap;
+}
+
+#login, #create-account, #change-password {
+  width: 300px;
+  height: 400px;
+}
+
+#marker-info, #marker-info-container, .info-element, #signed-in {
+  align-items: center;
+}
+
+#user-location-container {
+  bottom: 30px;
+  right: 30px;
+}
+
+#user-location {
+  z-index: 2;
+  font-size: 50px;
+  color: #0000FF;
+  text-shadow: 2px 2px 3px #999;
+}
+#user-location:hover {
+  text-shadow: 2px 2px 3px #999;
+  color: #00008B;
+  font-size: 55px;
+}
+
+#container-map-info {
+  flex: 1 1 auto;
+}
+
+#upload, #login-btn, #image-cutting,  #submit {
+  margin-top: 15px;
+}
+
+#map{
+  z-index: 0;
+}
+
+#navi {
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0 0 10px gray;
+  flex: 0 1 auto;
+}
+
+#info {
+  margin-top: 10px;
+  box-shadow: 0 0 3px gray;
+  overflow-y: auto;
+  padding: 3px;
+  top:0;
+  z-index: 1;
+}
+
+#info-content p {
+  margin: 5px;
+}
+
+#signed-in p {
+  margin: 0px;
+}
+
+#signed-in i {
+  font-size: 25px;
+}
+
+.flex-row, .info-element{
+    flex-direction: row !important;
+}
+
+.flex-row {
+  justify-content: flex-end !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.flex-row, .flex-column, .info-element {
+    display: flex;
+}
+
+.close-icon {
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.info-element-icon {
+  font-size: 40px !important;
+  margin-right: 5px;
+}
+
+.right-top {
+  align-self: flex-end;
+}
+
+.map-icon-yellow {
+  color: #9B870C;
+}
+.map-icon-green {
+  color: green;
+}
+
+.map-icon-green, .map-icon-yellow {
+  font-size: 20px;
+  text-shadow: 0 0 3px #ffffff;
+}
+
+.map-icon-red {
+  color: #8B0000;
+}
+
+.legend {
+    line-height: 16px;
+    width: 100px;
+    color: #333333;
+    font-family: 'Open Sans', cursive;
+    padding: 6px 8px;
+    background: white;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.freeze {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.legend i {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.9;
+}
+
+.legend img {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    float: left;
+}
+
+.legend p {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+}
+
+#change-password-ui-btn {
+    margin-top: 15px !important;
+    margin-bottom:  15px !important;
+}
+
+.leaflet-div-icon {
+			width: 60px;
+			height: 60px;
+      border: none;
+			background-color: transparent;
+			text-align: center;
+}
