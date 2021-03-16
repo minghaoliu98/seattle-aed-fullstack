@@ -58,3 +58,6 @@ _Figure 8:  pop up window for the AED_
 
 In conclusion, the interactivity of the map allows the users to zoom to specific aeds or geographic regions, which makes it easier to locate each aeds. The user can create an account and log in with their email address and password, once they sign in, they can upload AED pictures in a specific location. Also, the user can identify their current locations and find the nearest AED around them, which will be very convenient to find the location of the AED. 
 Having more people in the community who can access to a medical emergency by providing defibrillation will greatly increase sudden cardiac arrest survival rates.
+
+### Acknowledgement
+Thank you professor Zhao for designing this project for us and teaching us to do the programming through the whole quarter. Also appreciate Tyler for helping us to solve the issues that happened during the project.
