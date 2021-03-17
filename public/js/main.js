@@ -4,7 +4,6 @@
   var userlocationMarker = {};
   var mymap = {};
   var imageEditing = {};
-  var currentMarker = -1;
   const URL = "https://www.lmh98.com/api";
 
   window.addEventListener("load", init);
@@ -37,7 +36,6 @@
         document.getElementById("upload-img").classList.remove('hidden');
         document.getElementById("main").classList.add("freeze");
         document.getElementById('select-img-btn').value = '';
-        currentMarker = item.id;
         imageEditing.bind({url: "img/upload.jpg"});
     });
     let logOutBtn = document.getElementById("log-out");
@@ -142,10 +140,10 @@
   * sumbit the cutted image to server
   */
   function submitImage() {
-    if(Object.keys(user).length !== 0 && currentMarker !== -1){
+    if(Object.keys(user).length !== 0 && document.getElementById("upload").value !== -1){
       imageEditing.result({type: "canvas", size: "original", format: "jpg", quality: 1}).then((img)=>{
         let params = new FormData();
-        params.append("aed_id", currentMarker);
+        params.append("aed_id", document.getElementById("upload").value);
         params.append("email", user);
         params.append("description", document.getElementById("description").value);
         params.append("image", img);
@@ -474,7 +472,7 @@
       uploadBtn.classList.remove('freeze');
       uploadBtn.classList.remove("btn-outline-secondary");
       uploadBtn.classList.add("btn-outline-success");
-      uploadBtn.itemId = item.id;
+      uploadBtn.value = item.id;
     } else {
       uploadBtn.textContent = "Please Login To Upload Image";
       uploadBtn.classList.add('freeze');
